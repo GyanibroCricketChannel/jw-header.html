@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>@WatchAddaLive</title>
+  <title>Prime</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
@@ -28,19 +28,24 @@
   <div id="jwplayerDiv"></div>
   <script type="text/javascript">
     jwplayer("jwplayerDiv").setup({
-      file: "https://fxtlgrp-live1-814bffb9b389f652.akamaized.net/out/v1/8894fa49ea1e48c2bd7ee85cba7b48de/index.mpd", position: 'bottom',
+      file: "https://linearjitp-playback.astro.com.my/dash-wv/linear/2504/default.mpd", position: 'bottom',
       "autostart": true,
       "stretching": "",
       "width": "100%",
       type: "dash",
       drm: {
         "clearkey": {
-          "keyId": "56be6deb82e143d0b425dd3f869a2fe1",
-          "key": "956075a73c4a2ed73d25180431a27df6"
+          "keyId": "03c2e0af2f8159f9f0ce9b5dbc865f10",
+          "key": "cd84ed136b0cc71f8ab8cd4d4f6a2e4c"
         }
       }
     });  
             // Display a pop-up message when the page starts
-    
+    window.addEventListener("load", function() {
+      var result = window.confirm("Join @WatchAddaLive  for more updates?");
+      if (result) {
+        window.location.href = "https://t.me/WatchAddaLive";
+      }
+    });
   </script>
 
