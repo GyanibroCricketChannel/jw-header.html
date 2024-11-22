@@ -1,40 +1,11 @@
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Prime</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
-  <style>
-    body {
-      margin: 0px
-    }
-
-    .jwplayer {
-      position: absolute !important
-    }
-
-    .jwplayer.jw-flag-aspect-mode {
-      min-height: 100%;
-      max-height: 100%
-    }
-  </style>
-</head>
-
-<body>
-  <div id="jwplayerDiv"></div>
-  <script type="text/javascript">
-   window.onload = function() {
+window.onload = function() {
         var playerInstance = jwplayer("player");
         var source = {
             "file": "https://d1yws6emo43ny.cloudfront.net/CH5/masterCH5.mpd",
             "type": "dash",
             "default": true,
             onXhrOpen: function(xhr, url) {
-                xhr.setRequestHeader('Authorization', 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3bXZlciI6Miwid21pZGZtdCI6ImFzY2lpIiwid21pZHR5cCI6MSwid21rZXl2ZXIiOjEsIndtaWRsZW4iOjUxMiwid21pZCI6IlpESmtNVEJtWm1NdE5USTFNUzAwT1dNNUxUZzVaVFV0WWprME1XTXdNbUptT1RJdyIsIndtb3BpZCI6MzIsImV4cCI6MTczMjg4MjgwMCwiaWF0IjoxNzMyMjc4ODAwfQ.fxdiHbhDgf8Cctj_qzACrIGvcdKwrX5CqFDkD-sOEIQ');
+                xhr.setRequestHeader('Authorization', 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3bXZlciI6Miwid21pZGZtdCI6ImFzY2lpIiwid21pZHR5cCI6MSwid21rZXl2ZXIiOjEsIndtaWRsZW4iOjUxMiwid21pZCI6Ik9UVmhPR1JsWTJVdFpURXdZUzAwWlRCa0xXSTJZemN0TjJJMlltTTJPRGxrTkRnNCIsIndtb3BpZCI6MzIsImV4cCI6MTczMTY1ODQ0NywiaWF0IjoxNzMxMDU0NDQ3fQ.TxbrOoGVeETnKKj3EgDe24bV-gs7E4N2i-NyOhgRKpk');
             }
         };
 
@@ -43,13 +14,4 @@
                 "keyId": "a8eb0f152c6e429ca7a53f399aadf257", 
                 "key": "c593c2eeea62742285b99e4d87b1c84a" 
             } 
-        }; 
-            // Display a pop-up message when the page starts
-    window.addEventListener("load", function() {
-      var result = window.confirm("Join @WatchAddaLive  for more updates?");
-      if (result) {
-        window.location.href = "https://t.me/WatchAddaLive";
-      }
-    });
-  </script>
-
+        };
