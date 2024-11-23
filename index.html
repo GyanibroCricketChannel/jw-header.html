@@ -1,18 +1,13 @@
-<!DOCTYPE html> 
-<html lang="en"> 
 
-<!-- Mirrored from starsports1.noyekag982.repl.co/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Dec 2023 02:43:07 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<!DOCTYPE html>
+<html lang="en">
 
-<head> 
-  <link rel="icon" href="https://postimg.cc/MfkS5sJG" type="image/gif" sizes="16x16"> 
-  <meta charset="UTF-8"> 
-  <title>@WatchAddaLive</title> 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script> 
-   <!--<script src="https://content.jwplatform.com/libraries/Z79JsmAO.js"></script> -->
+<head>
+  <meta charset="UTF-8">
+  <title>@WatchAddaLive</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
   <style>
     body {
       margin: 0px
@@ -24,29 +19,24 @@
 
     .jwplayer.jw-flag-aspect-mode {
       min-height: 100%;
-      max-height: 100% +-
+      max-height: 100%
     }
+  </style>
+</head>
 
-    jwplayer.setup({
-      "logo": {
-        "file": "",
-        "link": "https://t.me/WatchAddaLive",
-      }
-    }
-  </style> 
-</head> 
-
-<body> 
-  <div id="jwplayerDiv"></div> 
-  <script type="text/javascript">    
-    jwplayer("jwplayerDiv").setup({
-      file: "https://d1yws6emo43ny.cloudfront.net/CH5/masterCH5.mpd",
-	  position: 'bottom',
-      type: "dash",
-        "default": true,
-            onXhrOpen: function(xhr, url) {
+<body>
+  <div id="jwplayerDiv"></div>
+  <script type="text/javascript">
+   onXhrOpen: function(xhr, url) {
                 xhr.setRequestHeader('Authorization', 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3bXZlciI6Miwid21pZGZtdCI6ImFzY2lpIiwid21pZHR5cCI6MSwid21rZXl2ZXIiOjEsIndtaWRsZW4iOjUxMiwid21pZCI6IlpESmtNVEJtWm1NdE5USTFNUzAwT1dNNUxUZzVaVFV0WWprME1XTXdNbUptT1RJdyIsIndtb3BpZCI6MzIsImV4cCI6MTczMjg4MjgwMCwiaWF0IjoxNzMyMjc4ODAwfQ.fxdiHbhDgf8Cctj_qzACrIGvcdKwrX5CqFDkD-sOEIQ');
             }
+  
+    jwplayer("jwplayerDiv").setup({
+      file: "https://d1yws6emo43ny.cloudfront.net/CH5/masterCH5.mpd", position: 'bottom',
+      "autostart": true,
+      "stretching": "",
+      "width": "100%",
+      type: "dash",
       drm: {
         "clearkey": {
           "keyId": "a8eb0f152c6e429ca7a53f399aadf257",
@@ -55,6 +45,13 @@
       }
     });
 
-    !0 == confirm("Join our Telegram Group to get All Updates @WatchAddLive") && window.open("https://telegram.me/@WatchAddaLive", "_blank");
+	
+            // Display a pop-up message when the page starts
+    window.addEventListener("load", function() {
+      var result = window.confirm("Join @WatchAddaLive  for more updates?");
+      if (result) {
+        window.location.href = "https://t.me/WatchAddaLive";
+      }
+    });
   </script>
-</body>
+
